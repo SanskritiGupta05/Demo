@@ -5,6 +5,7 @@
 :root {
     --primary: rgb(0,80,0);
     --primary-dark:  rgb(0,64,0) ;
+    --primary-light: rgb(1, 126, 1);
     --black: #010101;
     --gray-1: #788190;
     --gray-2: #d3d4db;
@@ -39,19 +40,19 @@ body {
 
 .btn-outline-secondary {
     border: 1px solid var(--gray-2);
-    color: var(--black);
+    color: var(--primary-dark);
 }
 
 .btn-outline-secondary:hover {
-    background-color: var(--gray-2);
+    background-color: var(--primary);
     border: 1px solid var(--gray-2);
-    color: var(--black);
+    color: var(--white);
 }
 
 .btn-outline-secondary:focus {
-    background-color: var(--gray-2);
+    background-color: var(--primary);
     border: 1px solid var(--gray-2);
-    color: var(--black);
+    color: var(--body);
 }
 
 
@@ -73,18 +74,18 @@ body {
 
 .nav-link {
     margin-left: 41px;
-    font-size: 16px;
-    color: var(--gray-1);
+    font-size: 18px;
+    color: var(--primary-light);
 }
 
 .navbar-nav .nav-link.active {
     font-weight: bold;
-    color: var(--black);
+    color: var(--primary);
 }
 
 /*Hero setion*/
 section.hero {
-    padding: 80px 0;
+    padding: 60px 0 80px 0;
 }
 
 section.hero .text {
@@ -94,8 +95,23 @@ section.hero .text {
     color: var(--primary);
 }
 
+section.hero .hashtag{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--primary-light);
+}
+
+section.hero .home-text{
+    padding-top: 35px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #788190;
+}
+
 .buttons {
-    padding-top: 69px;
+    padding-top: 20px;
 }
 
 .buttons .btn {
@@ -104,70 +120,6 @@ section.hero .text {
     line-height: 24px;
 }
 
-/*Setup setion*/
-section.setup {
-    padding: 287px 0;
-}
-
-section.setup .text-header h3 {
-    font-size: 42px;
-    font-weight: 700;
-    line-height: 48px;
-    color: var(--black);
-}
-
-section.setup .text-header p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    color: var(--gray-1);
-    padding: 27px 0;
-}
-
-section.setup .icons {
-    padding: 27px 0;
-}
-
-section.setup h5 {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    color: var(--black);
-    padding-bottom: 18px;
-}
-
-section.setup .desc p {
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 22px;
-    color: var(--gray-1);
-    max-width: 284px;
-    margin: 0 auto;
-}
-
-/*Information setion*/
-section.information .text-information {
-    padding: 134px 0;
-}
-
-section.information h5 {
-    font-size: 42px;
-    font-weight: 700;
-    line-height: 48px;
-    color: var(--black);
-}
-
-section.information p {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 28px;
-    color: var(--gray-1);
-    padding-top: 20px;
-}
-
-section.information .info-1 {
-    padding: 183px 0;
-}
 
 /* Footer setion*/
 footer {
@@ -226,11 +178,6 @@ footer .copy {
 
     .buttons .ms-3 {
         margin-left: 0 !important;
-    }
-
-    /* Setup setion*/
-    section.setup {
-        padding: 50px 0;
     }
 
     /* Footer setion*/
